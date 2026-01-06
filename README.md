@@ -1,14 +1,14 @@
 # Personalized Recipe Generator ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellowgreen)
 
 ## Project Description
-The **Personalized Recipe Generator** is a web application designed to help home cooks and food enthusiasts create personalized recipes based on their available ingredients and dietary preferences. Users can save their favorite recipes, plan meals, and generate shopping lists, making meal preparation easier and more enjoyable.
+The **Personalized Recipe Generator** is a web application designed to help home cooks, food enthusiasts, and individuals simplify meal planning. Users can input their available ingredients and dietary preferences to generate personalized recipe suggestions. The app allows users to save their favorite recipes, create meal plans, and generate shopping lists based on their selections.
 
 ## Features
-- 🔐 User authentication and profile management
-- 🍽️ Ingredient-based recipe suggestions
-- 📅 Meal planning and shopping list generation
-- ⭐ User ratings and reviews for recipes
-- 📊 Integration with external APIs for nutritional information
+- User authentication and profile management
+- Ingredient-based recipe suggestions
+- Meal planning and shopping list generation
+- User ratings and reviews for recipes
+- Integration with external APIs for nutritional information
 
 ## Tech Stack
 ### Frontend
@@ -60,16 +60,16 @@ npm run build
 - Deploy the `build` folder to your preferred hosting service (e.g., Heroku, Vercel).
 
 ## Contributing
-We welcome contributions! Please follow these steps to contribute:
+We welcome contributions! Please follow these guidelines:
 
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/YourFeature`).
-3. Make your changes and commit them (`git commit -m 'Add some feature'`).
-4. Push to the branch (`git push origin feature/YourFeature`).
-5. Open a pull request.
+- Fork the repository
+- Create a new branch for your feature or bug fix
+- Commit your changes
+- Push to your branch
+- Open a pull request
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-- Special thanks to the contributors and the open-source community for their invaluable support and resources.
+- Special thanks to the contributors and the open-source community for their invaluable resources and support.
