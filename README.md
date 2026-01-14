@@ -1,24 +1,24 @@
 # Personalized Recipe Generator ![Build Status](https://img.shields.io/badge/build-passing-brightgreen) ![Version](https://img.shields.io/badge/version-1.0.0-blue) ![License](https://img.shields.io/badge/license-MIT-yellowgreen)
 
 ## Project Description
-The **Personalized Recipe Generator** is a web application designed to help home cooks, food enthusiasts, and individuals simplify meal planning. Users can input their available ingredients and dietary preferences to generate personalized recipe suggestions. The app allows users to save their favorite recipes, create meal plans, and generate shopping lists based on their selections.
+The **Personalized Recipe Generator** is a web application designed to help home cooks, food enthusiasts, and individuals optimize their meal planning. Users can input available ingredients and dietary preferences to generate personalized recipes. The app allows users to save their favorite recipes, plan meals for the week, and create shopping lists based on their selections.
 
 ## Features
 - User authentication and profile management
 - Ingredient-based recipe suggestions
 - Meal planning and shopping list generation
-- User ratings and reviews for recipes
+- User feedback and rating system for recipes
 - Integration with external APIs for nutritional information
 
 ## Tech Stack
 ### Frontend
-- **React** ![React](https://img.shields.io/badge/React-61DAFB?style=flat&logo=react&logoColor=black)
+- **Next.js** 🌐
 
 ### Backend
-- **Node.js** ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=nodedotjs&logoColor=white)
+- **FastAPI** 🚀
 
 ### Database
-- **MongoDB** ![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat&logo=mongodb&logoColor=white)
+- **PostgreSQL** 🗄️
 
 ## Installation
 To set up the project locally, follow these steps:
@@ -29,43 +29,63 @@ git clone https://github.com/Rahul-Khera-Codes/personalized-recipe-generator.git
 - Navigate to the project directory
 bash
 cd personalized-recipe-generator
-- Install the dependencies
+- Create a virtual environment
+bash
+python -m venv venv
+- Activate the virtual environment
+bash
+# On Windows
+venv\Scripts\activate
+
+# On macOS/Linux
+source venv/bin/activate
+- Install the required dependencies
+bash
+pip install -r requirements.txt
+- Set up the PostgreSQL database and update the connection settings in the `.env` file
+- Run database migrations
+bash
+alembic upgrade head
+- Start the FastAPI server
+bash
+uvicorn app.main:app --reload
+- Navigate to the frontend directory
+bash
+cd frontend
+- Install frontend dependencies
 bash
 npm install
-- Set up your environment variables (create a `.env` file)
+- Start the Next.js development server
 bash
-touch .env
-- Start the development server
-bash
-npm start
+npm run dev
 ## Usage
-1. Open your web browser and navigate to `http://localhost:3000`.
-2. Create an account or log in to your existing profile.
-3. Input your available ingredients and dietary preferences.
-4. Browse personalized recipe suggestions, save your favorites, and create meal plans.
+Once the application is running, navigate to `http://localhost:3000` in your web browser. You can create an account, log in, and start generating personalized recipes based on your available ingredients and dietary preferences.
 
 ## API Documentation
-For detailed API documentation, please refer to the [API Documentation](https://github.com/Rahul-Khera-Codes/personalized-recipe-generator/wiki/API-Documentation).
+The API is built using FastAPI and provides endpoints for:
+- User authentication
+- Recipe generation
+- Meal planning
+- User feedback
+
+For detailed API documentation, visit the `/docs` endpoint after starting the server.
 
 ## Testing
-To run tests for the project, use the following command:
-bash
-npm test
-## Deployment
-To deploy the application, follow these steps:
+To run the tests for the application, follow these steps:
 
-- Build the application
+- Ensure the virtual environment is activated
+- Run the test suite
 bash
-npm run build
-- Deploy the `build` folder to your preferred hosting service (e.g., Heroku, Vercel).
+pytest
+## Deployment
+For deploying the application, consider using platforms like Heroku, AWS, or DigitalOcean. Ensure that the environment variables are set correctly for production, and follow the respective platform's deployment guidelines.
 
 ## Contributing
-We welcome contributions! Please follow these guidelines:
-
+Contributions are welcome! Please follow these steps to contribute:
 - Fork the repository
-- Create a new branch for your feature or bug fix
-- Commit your changes
-- Push to your branch
+- Create a new branch (`git checkout -b feature/YourFeature`)
+- Make your changes and commit them (`git commit -m 'Add some feature'`)
+- Push to the branch (`git push origin feature/YourFeature`)
 - Open a pull request
 
 ## License
